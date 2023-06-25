@@ -17,7 +17,7 @@
     <input type="range" id="fontsize" min="10" max="30" step="1">
 
     <label for="fontColor">Font Color:</label>
-    <input type="color" id="fontColor">
+    <input type="color" id="fontcolor">
 
     <button type="submit">Save Preferences</button>
   </form>
@@ -58,7 +58,7 @@
 
       if (savedFontColor) {
         document.body.style.color = savedFontColor;
-        document.getElementById("fontColor").value = savedFontColor;
+        document.getElementById("fontcolor").value = savedFontColor;
       }
     }
 
@@ -70,7 +70,7 @@
       event.preventDefault();
 
       var fontSize = document.getElementById("fontsize").value;
-      var fontColor = document.getElementById("fontColor").value;
+      var fontColor = document.getElementById("fontcolor").value;
 
       // Set cookies to store the preferences
       setCookie("fontSize", fontSize, 365);
